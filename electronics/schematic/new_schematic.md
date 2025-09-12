@@ -1,4 +1,4 @@
-# Electronics Schematic
+# New Electronics Schematic
 
 ```mermaid
 flowchart TD
