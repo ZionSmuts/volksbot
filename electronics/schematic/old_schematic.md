@@ -84,6 +84,8 @@ style Drive fill:#add8e6,stroke:#333,stroke-width:2px
 style Control fill:#dcb0f2,stroke:#333,stroke-width:2px
 style Safety fill:#f2b0b0,stroke:#333,stroke-width:2px
 
+```
+
 ## Wiring inside the Volksbot
 
 Here below is what I saw for the first time when opening up the Volksbot. It was quite messy, but I managed to take out every component and see where each connection was made.
