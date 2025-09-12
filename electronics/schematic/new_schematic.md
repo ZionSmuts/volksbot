@@ -105,9 +105,9 @@ The **emergency stop (E-stop)** line controls the main relay. When pressed, it d
 
 On the control side, the **Jetson AGX Xavier** acts as the “brain” of the system. It connects to the two EPOS2 controllers over **CAN bus** using a USB-to-CAN adapter. The adapter connects first to EPOS2 #1 (port J7), which is daisy-chained to EPOS2 #2 (port J8). CAN termination is applied properly: disabled on EPOS2 #1, enabled on EPOS2 #2, and provided on the adapter side. The CAN ground is tied into the system ground at the panel, keeping the communication stable.  
 
+The **motors are unfused** in this design, since each EPOS2 motor controller already provides current and fault protection for its motor output.
+
 <p align="center">
   <img src="/images/NVIDIA-Jetson-Xavier-AGX-X221.jpg" alt="Old Wiring Setup" width="350"/>
 </p>
-
-The **motors are unfused** in this design, since each EPOS2 motor controller already provides current and fault protection for its motor output.
 
