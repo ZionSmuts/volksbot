@@ -83,3 +83,25 @@ style Distribution fill:#b0e57c,stroke:#333,stroke-width:2px
 style Drive fill:#add8e6,stroke:#333,stroke-width:2px
 style Control fill:#dcb0f2,stroke:#333,stroke-width:2px
 style Safety fill:#f2b0b0,stroke:#333,stroke-width:2px
+
+...diagram...
+
+---
+
+## Wiring inside the Volksbot
+
+Here below is what I saw for the first time when opening up the Volksbot. It was quite messy, but I managed to take out every component and see where each connection was made.
+
+<p align="center">
+  <img src="images/old-wiring-setup.jpg" alt="Old Wiring Setup" width="450"/>
+</p>
+
+From this, I managed to make a schematic diagram and could only assume that a laptop was used as the "brain" of the whole system.
+
+Other things that I found were that the lead-acid batteries were completely dead. Hence, that was the reason why I decided to go for an upgrade to a 24V LiPo battery instead of two 12V batteries connected in series.
+
+Fortunately, the good things that I got from the old design were the chassis, motors, and motor controllers, which I had tested — and to my surprise, they were still working. So it was up to me to find a replacement for the "brain" of the whole system.
+
+To my luck, the company gave me the NVIDIA Jetson AGX Xavier to use on the Volksbot, and I’m quite excited to start using it!
+
+**NOTE:** I will make sure to also add a step-by-step breakdown in the future on how I use the Jetson, but also my approach to simulating the Volksbot in Gazebo :)
