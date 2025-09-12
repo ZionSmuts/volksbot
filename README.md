@@ -2,7 +2,9 @@
 
 ### Welcome to the *not official* Volksbot Repository :)
 
-![Volksbot form Side](images/chassis-side-view.jpg)
+<p align="center">
+  <img src="images/chassis-side-view.jpg" alt="Volksbot Side" width="350"/>
+</p>
 
 I am just an engineering student currently doing my internship at a laser scanning company, where I was given this so-called "Volksbot" to fix — and hopefully drive again.
 
@@ -22,7 +24,9 @@ My ultimate goal with this Volksbot is simply to get it moving again. *How* I do
 
 The first plan is to control the rover using a Logitech F710 gaming controller (referred to as a “joystick” from now on) through ROS 2 packages. The reason for using ROS 2 is that there is an incredible amount of information online about similar projects. It also gives me the option in the future, to make the rover autonomous. Where if this first step is successful, I definietly plan to do.
 
-![Logitech Game Controller](images/Logitech.jpg)
+<p align="center">
+  <img src="images/Logitech.jpg" alt="Logitech Game Controller" width="350"/>
+</p>
 
 At the moment, I will be using **Ubuntu 20.04 with ROS 2 Foxy** to simulate and test the Volksbot. You are, of course, welcome to use newer versions of Ubuntu, but I was advised that 20.04 is less buggy. Another important factor is that the embedded compute module I’ll be using — the *NVIDIA Jetson AGX Xavier* — also runs on Ubuntu 20.04, and I’d rather not change that to avoid trouble xD
 
