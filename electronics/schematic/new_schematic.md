@@ -20,7 +20,7 @@ flowchart TB
   %% Panel outputs
   PANEL -->|Out 1: 24V / 20A| FUSE1[2.5 mm2 KFZ Fuse]:::fuse --> EPOS1[EPOS2 70/10 #1]:::comp
   PANEL -->|Out 2: 24V / 20A| FUSE2[2.5 mm2 KFZ Fuse]:::fuse --> EPOS2[EPOS2 70/10 #2]:::comp
-  PANEL -->|Out 3: 12V / 5A|  FUSE3[2 mm2 Fuse]:::fuse     --> JET[Jetson AGX Xavier]:::comp
+  PANEL -->|Out 3: 12V / 5A|  FUSE3[2 mm2 Fuse]:::fuse --> JET[Jetson AGX Xavier]:::comp
   PANEL -->|Out 4: 5V / 5A|   OUT4[Reserved]:::comp
   PANEL -->|Emergency Stop|   ESTOP[E-Stop Relay]:::comp
 
