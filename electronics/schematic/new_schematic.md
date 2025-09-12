@@ -1,7 +1,6 @@
 # New Electronics Schematic
 
-<pre> ```
-
+```mermaid
 flowchart TD
   Battery["24V 30Ah Battery"] -->|6 mm²| FrontPanel["Front Panel"]
   
@@ -21,6 +20,3 @@ flowchart TD
   EPOS1 -->|CAN Cable| EPOS2
 
   EPOS2 --> TermLoop["Termination Loop"]
-
-
-```</pre>
