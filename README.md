@@ -6,7 +6,7 @@
 
 I am just an engineering student currently doing my internship at a laser scanning company, where I was given this so-called "Volksbot" to fix — and hopefully drive again.
 
-If you are looking for information about the Volksbot, you won’t find much on the internet beyond catalogues and scientific papers that cover the general purpose of the Volksbot and its siblings (I’ve really tried to find more, but without much success). The official website (www.volksbot.de) isn’t too useful either, as it is currently for sale. So this repository is my attempt to bring the project back to life!
+If you are looking for information about the Volksbot, you won’t find much on the internet beyond catalogues and scientific papers that cover the general purpose of the Volksbot and its siblings (I’ve really tried to find more, but without much success). The "official" website (www.volksbot.de) isn’t too useful either, as it is currently for sale. So this repository is my attempt to bring the project back to life!
 
 ---
 
