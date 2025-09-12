@@ -84,8 +84,6 @@ style Drive fill:#add8e6,stroke:#333,stroke-width:2px
 style Control fill:#dcb0f2,stroke:#333,stroke-width:2px
 style Safety fill:#f2b0b0,stroke:#333,stroke-width:2px
 
-...diagram...
-
 ---
 
 ## Wiring inside the Volksbot
