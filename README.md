@@ -3,7 +3,7 @@
 ### Welcome to the *not official* Volksbot Repository :)
 
 <p align="center">
-  <img src="images/chassis-side-view" alt="Chassis" width="350"/>
+  <img src="images/chassis-side-view.jpg" alt="Chassis" width="350"/>
 </p>
 
 I am just an engineering student currently doing my internship at a laser scanning company, where I was given this so-called "Volksbot" to fix — and hopefully drive again.
