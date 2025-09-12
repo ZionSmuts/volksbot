@@ -91,7 +91,7 @@ style Safety fill:#f2b0b0,stroke:#333,stroke-width:2px
 Here below is what I saw for the first time when opening up the Volksbot. It was quite messy, but I managed to take out every component and see where each connection was made.
 
 <p align="center">
-  <img src="images/old-wiring-setup.jpg" alt="Old Wiring Setup" width="450"/>
+  <img src="/images/old-wiring-setup.jpg" alt="Old Wiring Setup" width="450"/>
 </p>
 
 From this, I managed to make a schematic diagram and could only assume that a laptop was used as the "brain" of the whole system.
