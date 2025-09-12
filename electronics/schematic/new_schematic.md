@@ -86,7 +86,7 @@ style Safety fill:#f2b0b0,stroke:#333,stroke-width:2px
 
 The updated schematic replaces the old pair of lead-acid batteries with a **Booant 24 V / 30 Ah LiFePO₄ battery pack**. This upgrade reduces weight, increases runtime, and simplifies the power system to a single 24 V source. A **50 A DC fuse** is installed close to the battery on the positive line to provide main protection against short circuits. From there, power is routed into the **front distribution panel** through a **Phoenix Contact PC 4/2-STF-7.62 connector**, while the negative lead runs directly to the ground bus.  
 
-<p float="left">
+<p float="center">
   <img src="/images/PC4-2-STF-7,62-pcb-connector.jpg" width="250"/>
   <img src="/images/CAN-wire-j8-to-j8.jpg" width="250"/>
   <img src="/images/connection-with-female-plug-PC5-2-GF-7,62.jpg" width="250"/>
