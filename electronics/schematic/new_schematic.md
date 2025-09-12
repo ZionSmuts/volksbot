@@ -1,4 +1,4 @@
-# New Power Electronics Schematic
+# New Electronics Schematic
 
 ```mermaid
 flowchart TB
@@ -11,18 +11,18 @@ flowchart TB
 
   %% Battery and main fuse
   BAT[24V 30Ah Battery]:::comp
-  FUSE_MAIN[50A Fuse (6 mm²)]:::fuse
+  FUSE_MAIN[50A Fuse (6 mm2)]:::fuse
   BAT --> FUSE_MAIN
 
   %% Front Panel
   FUSE_MAIN --> PANEL[Front Panel]:::panel
 
   %% Panel outputs
-  PANEL -->|Out 1: 24V/20A| FUSE1[2.5 mm² KFZ Fuse]:::fuse --> EPOS1[EPOS2 70/10 #1]:::comp
-  PANEL -->|Out 2: 24V/20A| FUSE2[2.5 mm² KFZ Fuse]:::fuse --> EPOS2[EPOS2 70/10 #2]:::comp
-  PANEL -->|Out 3: 12V/5A| FUSE3[2 mm² Fuse]:::fuse --> JET[Jetson AGX Xavier]:::comp
-  PANEL -->|Out 4: 5V/5A| OUT4[(Reserved)]:::comp
-  PANEL -->|Emergency Stop| ESTOP[E-Stop Relay]:::comp
+  PANEL -->|Out 1: 24V / 20A| FUSE1[2.5 mm2 KFZ Fuse]:::fuse --> EPOS1[EPOS2 70/10 #1]:::comp
+  PANEL -->|Out 2: 24V / 20A| FUSE2[2.5 mm2 KFZ Fuse]:::fuse --> EPOS2[EPOS2 70/10 #2]:::comp
+  PANEL -->|Out 3: 12V / 5A|  FUSE3[2 mm2 Fuse]:::fuse     --> JET[Jetson AGX Xavier]:::comp
+  PANEL -->|Out 4: 5V / 5A|   OUT4[Reserved]:::comp
+  PANEL -->|Emergency Stop|   ESTOP[E-Stop Relay]:::comp
 
   %% Motors
   EPOS1 --> M1[Maxon Motor 241144 #1]:::motor
@@ -32,8 +32,8 @@ flowchart TB
   JET -. USB-to-CAN .-> USB[USB–CAN Adapter]:::io
   USB --- EPOS1
   EPOS1 --- EPOS2
-  EPOS2 -. Termination .- EPOS2
+  EPOS2 -. Termination ON .- EPOS2
 
-  %% Encoders (optional representation)
+  %% Encoders (optional)
   M1 -. Encoder #1 .-> EPOS1
   M2 -. Encoder #2 .-> EPOS2
