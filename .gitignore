@@ -10,3 +10,4 @@ log/
 # Python
 __pycache__/
 *.pyc
+*:Zone.Identifier
