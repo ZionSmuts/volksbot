@@ -1,33 +1,26 @@
 # New Electronics Schematic
 
-```mermaid
-flowchart TB
+<pre> ```
 
-  %% Nodes
-  BAT[24V 30Ah Battery]
-  FUSE_MAIN[50A Fuse (6 mm2)]
-  PANEL[Front Panel]
+flowchart TD
+  Battery["24V 30Ah Battery"] -->|6 mm²| FrontPanel["Front Panel"]
+  
+  FrontPanel -->|2.5 mm² Fuse| EPOS1["EPOS2 Motor Controller 70/10\n#1 (37571111)"]
+  FrontPanel -->|2.5 mm² Fuse| EPOS2["EPOS2 Motor Controller 70/10\n#2 (37571111)"]
+  FrontPanel -->|2 mm² Fuse| Jetson["NVIDIA Jetson Xavier AGX"]
+  FrontPanel -->|4 mm²| EStop["Emergency Stop"]
 
-  %% Battery -> Panel
-  BAT --> FUSE_MAIN
-  FUSE_MAIN --> PANEL
+  EPOS1 -->|Motor Cable #1| Motor1["Maxon Motor 241414\n#1"]
+  EPOS2 -->|Motor Cable #2| Motor2["Maxon Motor 241414\n#2"]
 
-  %% Panel outputs
-  PANEL -->|Out 1: 24V / 20A| EPOS1[EPOS2 70/10 #1]
-  PANEL -->|Out 2: 24V / 20A| EPOS2[EPOS2 70/10 #2]
-  PANEL -->|Out 3: 12V / 5A| JET[Jetson AGX Xavier]
-  PANEL -->|Out 4: 5V / 5A| OUT4[Reserved]
-  PANEL -->|Emergency Stop| ESTOP[E-Stop Relay]
+  Motor1 -->|Encoder #1| EPOS1
+  Motor2 -->|Encoder #2| EPOS2
 
-  %% Motors
-  EPOS1 --> M1[Maxon Motor 241144 #1]
-  EPOS2 --> M2[Maxon Motor 241144 #2]
+  Jetson --> USB_CAN["USB–CAN Adapter"]
+  USB_CAN -->|CAN Cable| EPOS1
+  EPOS1 -->|CAN Cable| EPOS2
 
-  %% CAN / control
-  JET -. USB to CAN .-> USB[USB to CAN Adapter]
-  USB --- EPOS1
-  EPOS1 --- EPOS2
+  EPOS2 --> TermLoop["Termination Loop"]
 
-  %% Encoders
-  M1 -. Encoder #1 .-> EPOS1
-  M2 -. Encoder #2 .-> EPOS2
+
+```</pre>
